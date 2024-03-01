@@ -23,7 +23,7 @@ public:
 	void sort();
 	void add(JobIntervals interval);
 	void inputInterval(const int &numInterval);
-	bool checkInput(std::vector<char> s);
+	bool checkInput(std::string s);
 	void computeP();
 	void DPBottomupopt();
 	void FindSoln();
