@@ -1,8 +1,5 @@
 #pragma once
-#include <iostream>
-#include <iomanip>
-#include <string>
-#include <vector>
+
 struct JobIntervals {
 	int start;
 	int finish;
@@ -12,19 +9,16 @@ struct JobIntervals {
 
 class WIS{
 	private:
-	std::vector<WIS> intervals;
+	std::vector<JobIntervals> intervals;
 public:
-	WIS(){
-		inputInterval(0);
-	}
-	WIS(int n){
-		inputInterval(n);
-	}
+	WIS();
+	WIS(int n);
 	void sort();
 	void add(JobIntervals interval);
 	void inputInterval(const int &numInterval);
-	bool checkInput(std::string s);
 	void computeP();
 	void DPBottomupopt();
-	void FindSoln();
+	void findSoln();
+	void output();
+	static bool compareIntervals(const JobIntervals &j1, const JobIntervals &j2);
 };
