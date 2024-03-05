@@ -4,6 +4,8 @@
 #include <vector>
 #include <sstream>
 #include <limits>
+#include <vector>
+
 
 #include "WISheader.h"
 
