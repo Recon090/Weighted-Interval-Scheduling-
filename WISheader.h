@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+#include <vector>
 
 //Defines a structure for Job intervals
 struct JobIntervals {
